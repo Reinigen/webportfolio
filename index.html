@@ -1,267 +1,431 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- Google Font Roboto Link -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Google Font Roboto Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-		<!-- Bootstrap CSS Link -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-		<!-- External CSS -->
-		<link rel="stylesheet" type="text/css" href="./index.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="./index.css" />
 
-		<title>Red Crystal</title>
-	</head>
-	<body>
-		<!-- Navbar Start -->
-		<!-- Home, Projects, Tools, Contacts -->
-		<nav class="navbar-dark  bg-danger fixed-top text-center d-flex flex-column flex-md-row justify-content-center">
-			<!-- Large Screen Navbar -->
-			<div class="d-none d-md-flex navbar" id="navbarNav">
-				<a class="nav-item nav-link active  text-light" aria-current="page" href="#landing">Home</a>
-				<a class="nav-item nav-link  text-light" href="#projects">Projects</a>
-				<a class="nav-item nav-link  text-light" href="#tools">Tools</a>
-				<a class="nav-item nav-link  text-light" href="#contact">Contacts</a>
-			</div>
-			<!-- Small Screen Navbar -->
-			<div class="d-md-none container-fluid">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#navbarDropdown" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Menu
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#landing">Home</a></li>
-							<li><a class="dropdown-item" href="#projects">Projects</a></li>
-							<li><a class="dropdown-item" href="#tools">Tools</a></li>
-							<li><a class="dropdown-item" href="#contact">Contacts</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</nav>
+    <title>Red Crystal</title>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <!-- Home, Projects, Tools, Contacts -->
+    <nav
+      class="navbar-dark bg-danger fixed-top text-center d-flex flex-column flex-md-row justify-content-center"
+    >
+      <!-- Large Screen Navbar -->
+      <div class="d-none d-md-flex navbar" id="navbarNav">
+        <a
+          class="nav-item nav-link active text-light"
+          aria-current="page"
+          href="#landing"
+          >Home</a
+        >
+        <a class="nav-item nav-link text-light" href="#projects">Projects</a>
+        <a class="nav-item nav-link text-light" href="#tools">Tools</a>
+        <a class="nav-item nav-link text-light" href="#contact">Contacts</a>
+      </div>
+      <!-- Small Screen Navbar -->
+      <div class="d-md-none container-fluid">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#navbarDropdown"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Menu
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#landing">Home</a></li>
+              <li><a class="dropdown-item" href="#projects">Projects</a></li>
+              <li><a class="dropdown-item" href="#tools">Tools</a></li>
+              <li><a class="dropdown-item" href="#contact">Contacts</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-		<!-- Navbar End -->
-		<main class="container-fluid pt-5">
+    <!-- Navbar End -->
+    <main class="container-fluid pt-5">
+      <!-- Landing Start -->
+      <div
+        id="landing"
+        class="row text-light bg-dark pt-5 px-5 d-flex flex-column flex-md-row"
+      >
+        <div class="col-md-8 order-2 order-md-1 my-5">
+          <h1>
+            I'm Raymund <strong class="text-danger">"Red"</strong> Crystal
+          </h1>
+          <h1>
+            <strong class="text-danger"> Full Stack </strong>Web Developer
+          </h1>
+          <button class="btn end btn-danger my-5 pt-3">
+            <a class="nav-link text-light" href="#contact-form">
+              <h4>HIRE ME →</h4>
+            </a>
+          </button>
+        </div>
 
-			<!-- Landing Start -->
-			<div id="landing" class="row text-light bg-dark pt-5 px-5 d-flex flex-column flex-md-row">
-				<div class="col-md-8 order-2 order-md-1 my-5">
-					<h1> I'm Raymund <strong class="text-danger">"Red"</strong> Crystal</h1>
-					<h1><strong class="text-danger"> Full Stack </strong>Web Developer</h1>
-					<button class="btn end btn-danger my-5 pt-3">
-						<a class="nav-link text-light" href="#contact-form">
-						<h4>HIRE ME →</h4>
-						</a>
-					</button>
-				</div>
+        <div class="col-md-3 order-1 order-md-2">
+          <img
+            src="https://drive.google.com/file/d/16ggJ3Er0z8oU8gWHllxrJr933_rf6c-k/view?usp=sharing"
+            class="img-fluid rounded-circle"
+            alt="Red Crystal"
+          />
+        </div>
+      </div>
+      <!-- Landing End -->
 
-				<div class="col-md-3 order-1 order-md-2">
-					<img src="https://scontent.fceb1-1.fna.fbcdn.net/v/t39.30808-6/254647748_3076058489335406_9031539154881913100_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHOAxVu8zEmEUTViRez602_Y8cy7QL7TjxjxzLtAvtOPAL99JWcx6P-OsKYmQQ6WJxpQIco3Db1mtGkjKc77NsI&_nc_ohc=TMt6AaBRIzcQ7kNvgE-Byg7&_nc_zt=23&_nc_ht=scontent.fceb1-1.fna&_nc_gid=Ak0egdrqNmxi62uyc692Mu2&oh=00_AYBPZ7JveTka8ZjUN6BwRWkIk_VJGujim1hO4GG1d8J8jg&oe=6766BAF6" class="img-fluid rounded-circle">
-				</div>
+      <!-- Projects Start -->
+      <div
+        id="projects"
+        class="row text-center text-light bg-danger pt-2 d-flex flex-column flex-lg-row pb-5"
+      >
+        <h2>My Projects</h2>
+        <!-- E-Commerce,Blog, Online Booking System -->
+        <!-- Project 1 Start -->
+        <div id="ecommerce" class="col">
+          <div class="card text-white bg-dark mb-3">
+            <div class="card-header h-50">
+              <img
+                src="https://happay.com/blog/wp-content/uploads/sites/12/2022/08/best-billing-software.webp"
+                class="img-fluid rounded h-100"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">GridPay</h5>
+              <p class="card-text">
+                GridPay is a cloud-based utility billing software that manages
+                billing, payments, customer accounts, and reporting. The
+                software will operate on a subscription model, with pricing
+                based on the number of subscribers or customers onboarded.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 1 End -->
 
-			</div>
-			<!-- Landing End -->
+        <!-- Project 2 Start -->
+        <div id="blog" class="col">
+          <div class="card text-white bg-dark mb-3">
+            <div class="card-header h-50">
+              <img
+                src="https://media.istockphoto.com/id/1253922154/vector/blog-authors-writing-articles.jpg?s=612x612&w=0&k=20&c=rfl7LAg3NoD2fYlPXTBvnXexaq2cFTZLxt7ronsBsWk="
+                class="img-fluid rounded h-100"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Blog</h5>
+              <p class="card-text">
+                My personal blog is where I show progress on my projects and
+                show off my personality. I usually post images of progress
+                updates and not much else.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 End -->
 
-			<!-- Projects Start -->
-			<div id="projects" class="row text-center text-light bg-danger pt-2 d-flex flex-column flex-lg-row pb-5">
-				<h2>My Projects</h2>
-				<!-- E-Commerce,Blog, Online Booking System -->
-				<!-- Project 1 Start -->
-				<div id="ecommerce" class="col">
-					<div class="card text-white bg-dark mb-3">
-						<div class="card-header h-50">
-							<img src="https://happay.com/blog/wp-content/uploads/sites/12/2022/08/best-billing-software.webp" class="img-fluid rounded h-100">
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">GridPay</h5>
-							<p class="card-text">GridPay is a cloud-based  utility billing software that manages billing, payments, customer accounts, and reporting. The software will operate on a subscription model, with pricing based on the number of subscribers or customers onboarded.
-							</p>
-						</div>
-					</div>
-				</div>
-				<!-- Project 1 End -->
+        <!-- Project 3 Start -->
+        <div id="onlinebookingSystem" class="col">
+          <div class="card text-white bg-dark mb-3">
+            <div class="card-header h-50">
+              <img
+                src="https://media.istockphoto.com/id/1400204803/vector/online-booking-vector-illustration-digital-appointment-booking.jpg?s=612x612&w=0&k=20&c=J1YvZPwDNmKPjc2T-pAdJZc1n24SvusQuKNdwVuJOpE="
+                class="img-fluid rounded h-100"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Online Booking System</h5>
+              <p class="card-text">
+                Designed and implemented an intuitive online booking system to
+                streamline scheduling for businesses. The platform features 24/7
+                availability, real-time updates, automated notifications, and
+                secure payment integration. Highly customizable, it allows
+                businesses to manage services, staff availability, and
+                personalized notifications, improving efficiency and client
+                satisfaction.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project3 End -->
+      </div>
+      <!-- Projects End -->
 
-				<!-- Project 2 Start -->
-				<div id="blog" class="col">
-					<div class="card text-white bg-dark mb-3">
-						<div class="card-header h-50">
-							<img src="https://media.istockphoto.com/id/1253922154/vector/blog-authors-writing-articles.jpg?s=612x612&w=0&k=20&c=rfl7LAg3NoD2fYlPXTBvnXexaq2cFTZLxt7ronsBsWk=" class="img-fluid rounded h-100">
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Blog</h5>
-							<p class="card-text">
-								My personal blog is where I show progress on my projects and show off my personality. I usually post images of progress updates and not much else.
-							</p>
-						</div>
-					</div>
-				</div>
-				<!-- Project 2 End -->
+      <!-- Tools Start -->
+      <div
+        id="tools"
+        class="row bg-dark text-light text-center pt-2 d-flex flex-column flex-md-row pb-5"
+      >
+        <!-- Frontend, MERN, Other Tools -->
+        <h2>Tools</h2>
+        <!-- Frontend Start -->
+        <div id="frontend" class="col pt-3">
+          <h3>Front End</h3>
+          <!-- Larger Screens -->
+          <div class="d-none d-md-flex justify-content-center">
+            <!-- HTML 5 -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+              class="icon img-thumbnail"
+            />
+            <!-- CSS -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+              class="icon img-thumbnail"
+            />
+          </div>
+          <div class="d-none d-md-flex justify-content-center">
+            <!-- Bootstrap -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+              class="icon img-thumbnail"
+            />
+            <!-- JS -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png"
+              class="icon img-thumbnail"
+            />
+          </div>
+          <!-- Small Screen -->
+          <div class="d-md-none">
+            <!-- HTML 5 -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+              class="icon img-thumbnail"
+            />
+            <!-- CSS -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+              class="icon img-thumbnail"
+            />
+            <!-- Bootstrap -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+              class="icon img-thumbnail"
+            />
+            <!-- JS -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png"
+              class="icon img-thumbnail"
+            />
+          </div>
+        </div>
+        <!-- Frontend End -->
 
-				<!-- Project 3 Start -->
-				<div id="onlinebookingSystem" class="col">
-					<div class="card text-white bg-dark mb-3">
-						<div class="card-header h-50">
-							<img src="https://media.istockphoto.com/id/1400204803/vector/online-booking-vector-illustration-digital-appointment-booking.jpg?s=612x612&w=0&k=20&c=J1YvZPwDNmKPjc2T-pAdJZc1n24SvusQuKNdwVuJOpE=" class="img-fluid rounded h-100">
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Online Booking System</h5>
-							<p class="card-text">Designed and implemented an intuitive online booking system to streamline scheduling for businesses. The platform features 24/7 availability, real-time updates, automated notifications, and secure payment integration. Highly customizable, it allows businesses to manage services, staff availability, and personalized notifications, improving efficiency and client satisfaction.
-							</p>
-						</div>
-					</div>
-				</div>
-				<!-- Project3 End -->
-			</div>
-			<!-- Projects End -->
+        <!-- MERN Start -->
+        <div id="mern" class="col pt-3">
+          <h3>MERN</h3>
+          <div class="d-none d-md-flex justify-content-center">
+            <!-- MongoDB -->
+            <img
+              src="https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png"
+              class="icon img-thumbnail"
+            />
+            <!-- React -->
+            <img
+              src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+              class="icon img-thumbnail"
+            />
+          </div>
+          <div class="d-none d-md-flex justify-content-center">
+            <!-- ExpressJS -->
+            <img
+              src="https://img.icons8.com/color/512/express-js.png"
+              class="icon img-thumbnail"
+            />
+            <!-- JS -->
+            <img
+              src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png"
+              class="icon img-thumbnail"
+            />
+          </div>
+          <!-- Small Screen -->
+          <div class="d-md-none">
+            <!-- MongoDB -->
+            <img
+              src="https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png"
+              class="icon img-thumbnail"
+            />
+            <!-- React -->
+            <img
+              src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+              class="icon img-thumbnail"
+            />
+            <!-- ExpressJS -->
+            <img
+              src="https://img.icons8.com/color/512/express-js.png"
+              class="icon img-thumbnail"
+            />
+            <!-- JS -->
+            <img
+              src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png"
+              class="icon img-thumbnail"
+            />
+          </div>
+        </div>
+        <!-- MERN End -->
 
-			<!-- Tools Start -->
-			<div id="tools" class="row bg-dark text-light text-center pt-2  d-flex flex-column flex-md-row pb-5">
-				<!-- Frontend, MERN, Other Tools -->
-				<h2>Tools</h2>
-				<!-- Frontend Start -->
-				<div id="frontend" class="col pt-3">
-					<h3>Front End</h3>
-					<!-- Larger Screens -->
-					<div class="d-none d-md-flex justify-content-center">
-						<!-- HTML 5 -->
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" class="icon img-thumbnail">
-						<!-- CSS -->
-						<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" class="icon img-thumbnail">
-					</div>
-					<div class="d-none d-md-flex justify-content-center">
-						<!-- Bootstrap -->
-						<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" class="icon img-thumbnail">
-						<!-- JS -->
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png" class="icon img-thumbnail">
-					</div>
-					<!-- Small Screen -->
-					<div class="d-md-none">
-						<!-- HTML 5 -->
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" class="icon img-thumbnail">
-						<!-- CSS -->
-						<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" class="icon img-thumbnail">
-						<!-- Bootstrap -->
-						<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" class="icon img-thumbnail">
-						<!-- JS -->
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png" class="icon img-thumbnail">
-					</div>
-				</div>
-				<!-- Frontend End -->
+        <!--  Other Tools Start -->
+        <div id="others" class="col pt-3">
+          <h3>Other Tools</h3>
+          <div class="d-none d-md-flex justify-content-center">
+            <!-- Heroku -->
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1MXKKbbkRKXjSmCqACjxEgULs6Jzzom3STQ&s"
+              class="icon img-thumbnail"
+            />
+            <!-- Git -->
+            <img
+              src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+              class="icon img-thumbnail"
+            />
+          </div>
+          <div class="d-none d-md-flex justify-content-center">
+            <!-- Postman -->
+            <img
+              src="https://iconape.com/wp-content/png_logo_vector/postman.png"
+              class="icon img-thumbnail"
+            />
+            <!-- Sublime -->
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPDDOjs-NRNNFRboOOlP0aELPnIilPCRo5Q&s"
+              class="icon img-thumbnail"
+            />
+          </div>
+          <!-- Small Screen -->
+          <div class="d-md-none">
+            <!-- Heroku -->
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1MXKKbbkRKXjSmCqACjxEgULs6Jzzom3STQ&s"
+              class="icon img-thumbnail"
+            />
+            <!-- Git -->
+            <img
+              src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+              class="icon img-thumbnail"
+            />
+            <!-- Postman -->
+            <img
+              src="https://iconape.com/wp-content/png_logo_vector/postman.png"
+              class="icon img-thumbnail"
+            />
+            <!-- Sublime -->
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPDDOjs-NRNNFRboOOlP0aELPnIilPCRo5Q&s"
+              class="icon img-thumbnail"
+            />
+          </div>
+        </div>
+        <!-- Other Tools End -->
+      </div>
+      <!-- Tools End -->
 
-				<!-- MERN Start -->
-				<div id="mern" class="col pt-3">
-					<h3>MERN</h3>
-					<div class="d-none d-md-flex justify-content-center">
-						<!-- MongoDB -->
-						<img src="https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png" class="icon img-thumbnail">
-						<!-- React -->
-						<img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" class="icon img-thumbnail">
-					</div>
-					<div class="d-none d-md-flex justify-content-center">
-						<!-- ExpressJS -->
-						<img src="https://img.icons8.com/color/512/express-js.png" class="icon img-thumbnail">
-						<!-- JS -->
-						<img src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" class="icon img-thumbnail">
-					</div>
-					<!-- Small Screen -->
-					<div class="d-md-none">
-						<!-- MongoDB -->
-						<img src="https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png" class="icon img-thumbnail">
-						<!-- React -->
-						<img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" class="icon img-thumbnail">
-						<!-- ExpressJS -->
-						<img src="https://img.icons8.com/color/512/express-js.png" class="icon img-thumbnail">
-						<!-- JS -->
-						<img src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" class="icon img-thumbnail">
-					</div>
-				</div>
-				<!-- MERN End -->
+      <!-- Contacts Start -->
+      <div id="contact" class="row bg-dark text-light pt-5 text-center">
+        <h2>Contact</h2>
+        <!-- Links for your contact information No need to be our actual profiles Just Update when the Capstone is Over -->
+        <!-- Links -->
+        <div class="d-flex py-5 justify-content-center">
+          <!-- FB -->
+          <a href="https://www.facebook.com/"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png"
+              class="contact-icon m-3"
+          /></a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+              class="contact-icon m-3"
+          /></a>
+          <!-- Gitlab -->
+          <a href="https://about.gitlab.com/"
+            ><img
+              src="https://cdn.worldvectorlogo.com/logos/gitlab.svg"
+              class="contact-icon m-3"
+          /></a>
+          <!-- Github -->
+          <a href="https://github.com/"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+              class="contact-icon m-3"
+          /></a>
+        </div>
 
-				<!--  Other Tools Start -->
-				<div id="others" class="col pt-3">
-					<h3>Other Tools</h3>
-					<div class="d-none d-md-flex justify-content-center">
-						<!-- Heroku -->
-						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1MXKKbbkRKXjSmCqACjxEgULs6Jzzom3STQ&s" class="icon img-thumbnail">
-						<!-- Git -->
-						<img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" class="icon img-thumbnail">
-					</div>
-					<div class="d-none d-md-flex justify-content-center">
-						<!-- Postman -->
-						<img src="https://iconape.com/wp-content/png_logo_vector/postman.png" class="icon img-thumbnail">
-						<!-- Sublime -->
-						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPDDOjs-NRNNFRboOOlP0aELPnIilPCRo5Q&s" class="icon img-thumbnail">
-					</div>
-					<!-- Small Screen -->
-					<div class="d-md-none">
-						<!-- Heroku -->
-						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1MXKKbbkRKXjSmCqACjxEgULs6Jzzom3STQ&s" class="icon img-thumbnail">
-						<!-- Git -->
-						<img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" class="icon img-thumbnail">
-						<!-- Postman -->
-						<img src="https://iconape.com/wp-content/png_logo_vector/postman.png" class="icon img-thumbnail">
-						<!-- Sublime -->
-						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPDDOjs-NRNNFRboOOlP0aELPnIilPCRo5Q&s" class="icon img-thumbnail">
-					</div>
-				</div>
-				<!-- Other Tools End -->
-			</div>
-			<!-- Tools End -->
+        <!-- Form and Google Map -->
+        <div class="d-flex flex-column flex-md-row">
+          <div id="googlemap" class="m-md-5 m-2">
+            <h4>Visit Me!</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61762.59376543379!2d121.02672091553056!3d14.646737530554525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b9a2777a00f9%3A0x6d36c8f429a12fc6!2sMarikina%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1734407796770!5m2!1sen!2sph"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="embed"
+            ></iframe>
+          </div>
+          <div id="contact-form" class="m-md-5 m-5">
+            <h4>Message Me!</h4>
+            <form class="text-start m-5">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name: </label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="message">Message:</label>
+                <textarea class="form-control" id="message" rows="5">
+                </textarea>
+              </div>
+              <button type="submit" class="btn btn-danger">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Contacts End -->
+    </main>
 
-			<!-- Contacts Start -->
-			<div id="contact" class="row bg-dark text-light pt-5 text-center">
-				<h2>Contact</h2>
-				<!-- Links for your contact information No need to be our actual profiles Just Update when the Capstone is Over -->
-				<!-- Links -->
-				<div class="d-flex py-5 justify-content-center">
-					<!-- FB -->
-					<a href="https://www.facebook.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" class="contact-icon m-3"></a>
-					<!-- LinkedIn -->
-					<a href="https://www.linkedin.com/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="contact-icon m-3"></a>
-					<!-- Gitlab -->
-					<a href="https://about.gitlab.com/"><img src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" class="contact-icon m-3"></a>
-					<!-- Github -->
-					<a href="https://github.com/"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="contact-icon m-3"></a>	
-				</div>
-
-				<!-- Form and Google Map -->
-				<div class="d-flex flex-column flex-md-row">
-					<div id="googlemap" class="m-md-5 m-2">
-						<h4>Visit Me!</h4>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61762.59376543379!2d121.02672091553056!3d14.646737530554525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b9a2777a00f9%3A0x6d36c8f429a12fc6!2sMarikina%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1734407796770!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="embed"></iframe>
-					</div>
-					<div id="contact-form" class="m-md-5 m-5">
-						<h4>Message Me!</h4>
-						<form class="text-start m-5">
-							<div class="mb-3">
-								<label for="name" class="form-label">Full Name: </label>
-								<input type="text" class="form-control" id="name">
-							</div>
-							<div class="mb-3">
-								<label for="email" class="form-label">Email address:</label>
-								<input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-								<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-							</div>
-							<div class="mb-3">
-								<label class="form-label" for="message">Message:</label>
-								<textarea class="form-control" id="message" rows="5"> </textarea>
-							</div>
-							<button type="submit" class="btn btn-danger">Submit</button>
-						</form>
-					</div>
-				</div>
-			</div>
-			<!-- Contacts End -->
-		</main>
-
-
-		<!-- Bootstrap JS Link -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	</body>
-	</html>
+    <!-- Bootstrap JS Link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
