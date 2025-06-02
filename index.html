@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
 
@@ -20,6 +20,12 @@
       crossorigin="anonymous"
     />
 
+    <!-- Bootstrap Icons Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
     <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="./index.css" />
 
@@ -29,19 +35,20 @@
     <!-- Navbar Start -->
     <!-- Home, Projects, Tools, Contacts -->
     <nav
-      class="navbar-dark bg-danger fixed-top text-center d-flex flex-column flex-md-row justify-content-center"
+      class="navbar-dark d-flex flex-column flex-md-row justify-content-between pt-3 ps-5 inter-bold"
     >
       <!-- Large Screen Navbar -->
       <div class="d-none d-md-flex navbar" id="navbarNav">
         <a
           class="nav-item nav-link active text-light"
-          aria-current="page"
+          aria-current="home"
           href="#landing"
           >Home</a
         >
         <a class="nav-item nav-link text-light" href="#projects">Projects</a>
+        <a class="nav-item nav-link text-light" href="#services">Services</a>
         <a class="nav-item nav-link text-light" href="#tools">Tools</a>
-        <a class="nav-item nav-link text-light" href="#contact">Contacts</a>
+        <a class="nav-item nav-link text-light" href="#contact">Message Me!</a>
       </div>
       <!-- Small Screen Navbar -->
       <div class="d-md-none container-fluid">
@@ -66,6 +73,10 @@
           </li>
         </ul>
       </div>
+
+      <a class="navbar-item pe-5 pt-3 nav-link text-danger" href="#resume"
+        >View My Resume</a
+      >
     </nav>
 
     <!-- Navbar End -->
@@ -73,38 +84,41 @@
       <!-- Landing Start -->
       <div
         id="landing"
-        class="row text-light bg-dark pt-5 px-5 d-flex flex-column flex-md-row"
+        class="row text-light pt-5 px-5 d-flex flex-column flex-md-row"
       >
-        <div class="col-md-8 order-2 order-md-1 my-5">
-          <h1>
-            I'm Raymund <strong class="text-danger">"Red"</strong> Crystal
-          </h1>
-          <h1>
-            <strong class="text-danger"> Full Stack </strong>Web Developer
-          </h1>
-          <button class="btn end btn-danger my-5 pt-3">
-            <a class="nav-link text-light" href="#contact-form">
-              <h4>HIRE ME →</h4>
-            </a>
-          </button>
-        </div>
-
-        <div class="col-md-3 order-1 order-md-2">
-          <img
-            src="https://i.imgur.com/9kzWU0Z.jpeg"
-            class="img-fluid rounded-circle pb-5"
-            alt="Red Crystal"
-          />
+        <div class="my-5">
+          Hello! My Name is
+          <h1 class="text-danger">RED CRYSTAL</h1>
+          Full Stack Web Development, Data Analytics & Game Development
+          <div class="pt-3 fs-2">
+            <a href="#contact"
+              ><i class="p-2 bi bi-envelope-fill text-danger"></i
+            ></a>
+            <a href="www.linkedin.com/in/raymundcrystal"
+              ><i class="p-2 bi bi-linkedin text-danger"></i
+            ></a>
+            <a href="https://github.com/Reinigen"
+              ><i class="p-2 bi bi-github text-danger"></i
+            ></a>
+          </div>
+          <div class="my-5 d-flex justify-content-center">
+            <button class="btn-danger">
+              <a class="nav-link text-dark" href="#projects">
+                View Featured Projects
+              </a>
+            </button>
+          </div>
         </div>
       </div>
+
       <!-- Landing End -->
 
       <!-- Projects Start -->
       <div
         id="projects"
-        class="row text-center text-light bg-danger pt-2 d-flex flex-column flex-lg-row pb-5"
+        class="row text-center text-light pt-2 d-flex flex-column flex-lg-row pb-5"
       >
-        <h2>My Projects</h2>
+        <h2 class="text-danger">My Projects</h2>
         <!-- E-Commerce,Blog, Online Booking System -->
         <!-- Project 1 Start -->
         <div id="ecommerce" class="col">
@@ -207,13 +221,13 @@
       <!-- Tools Start -->
       <div
         id="tools"
-        class="row bg-dark text-light text-center pt-2 d-flex flex-column flex-md-row pb-5"
+        class="row text-light text-center pt-2 d-flex flex-column flex-md-row pb-5"
       >
         <!-- Frontend, MERN, Other Tools -->
-        <h2>Tools</h2>
+        <h2 class="text-danger">Tools</h2>
         <!-- Frontend Start -->
         <div id="frontend" class="col pt-3">
-          <h3>Front End</h3>
+          <h3 class="text-danger">Front End</h3>
           <!-- Larger Screens -->
           <div class="d-none d-md-flex justify-content-center">
             <!-- HTML 5 -->
@@ -267,7 +281,7 @@
 
         <!-- MERN Start -->
         <div id="mern" class="col pt-3">
-          <h3>MERN</h3>
+          <h3 class="text-danger">MERN</h3>
           <div class="d-none d-md-flex justify-content-center">
             <!-- MongoDB -->
             <img
@@ -280,7 +294,7 @@
               class="icon img-thumbnail"
             />
           </div>
-          <div class="d-none d-md-flex justify-content-center">
+          <div class=" d-flex justify-content-center">
             <!-- ExpressJS -->
             <img
               src="https://img.icons8.com/color/512/express-js.png"
@@ -320,7 +334,7 @@
 
         <!--  Other Tools Start -->
         <div id="others" class="col pt-3">
-          <h3>Other Tools</h3>
+          <h3 class="text-danger">Other Tools</h3>
           <div class="d-none d-md-flex justify-content-center">
             <!-- Heroku -->
             <img
@@ -373,53 +387,24 @@
       </div>
       <!-- Tools End -->
 
-      <!-- Contacts Start -->
-      <div id="contact" class="row bg-dark text-light pt-5 text-center">
-        <h2>Contact</h2>
-        <!-- Links for your contact information No need to be our actual profiles Just Update when the Capstone is Over -->
-        <!-- Links -->
-        <div class="d-flex py-5 justify-content-center">
-          <!-- FB -->
-          <a href="https://www.facebook.com/"
-            ><img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png"
-              class="contact-icon m-3"
-          /></a>
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/"
-            ><img
-              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-              class="contact-icon m-3"
-          /></a>
-          <!-- Gitlab -->
-          <a href="https://about.gitlab.com/"
-            ><img
-              src="https://cdn.worldvectorlogo.com/logos/gitlab.svg"
-              class="contact-icon m-3"
-          /></a>
-          <!-- Github -->
-          <a href="https://github.com/"
-            ><img
-              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-              class="contact-icon m-3"
-          /></a>
-        </div>
-
         <!-- Form and Google Map -->
-        <div class="d-flex flex-column flex-md-row">
-          <div id="googlemap" class="m-md-5 m-2">
-            <h4>Visit Me!</h4>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61762.59376543379!2d121.02672091553056!3d14.646737530554525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b9a2777a00f9%3A0x6d36c8f429a12fc6!2sMarikina%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1734407796770!5m2!1sen!2sph"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              class="embed"
-            ></iframe>
-          </div>
+        <div class="d-flex flex-column text-light flex-md-row">
+         
           <div id="contact-form" class="m-md-5 m-5">
-            <h4>Message Me!</h4>
-            <form class="text-start m-5">
+            <h1 class="text-danger">Connect with Me!</h1>
+            <p class="ps-3">Does my work align with your needs? If so, feel free to leave a message!</p>
+            <div class="ps-2 pt-3 fs-2">
+            <a href="#contact"
+              ><i class="p-2 bi bi-envelope-fill text-danger"></i
+            ></a>
+            <a href="www.linkedin.com/in/raymundcrystal"
+              ><i class="p-2 bi bi-linkedin text-danger"></i
+            ></a>
+            <a href="https://github.com/Reinigen"
+              ><i class="p-2 bi bi-github text-danger"></i
+            ></a>
+          </div>
+            <form class="text-start ps-3 mt-5">
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name: </label>
                 <input type="text" class="form-control" id="name" />
