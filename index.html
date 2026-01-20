@@ -35,7 +35,7 @@
     <!-- Navbar Start -->
     <!-- Home, Projects, Tools, Contacts -->
     <nav
-      class="navbar-dark d-flex flex-column flex-md-row justify-content-between pt-3 ps-5 inter-bold"
+      class="navbar-dark d-flex flex-row justify-content-between pt-3 ps-5 inter-bold sticky-top"
     >
       <!-- Large Screen Navbar -->
       <div class="d-none d-md-flex navbar" id="navbarNav">
@@ -48,7 +48,7 @@
         <a class="nav-item nav-link text-light" href="#projects">Projects</a>
         <!-- <a class="nav-item nav-link text-light" href="#services">Services</a> -->
         <a class="nav-item nav-link text-light" href="#tools">Tools</a>
-        <a class="nav-item nav-link text-light" href="#contact">Message Me!</a>
+        <a class="nav-item nav-link text-light" href="#contact-form">Contact Me!</a>
       </div>
       <!-- Small Screen Navbar -->
       <div class="d-md-none container-fluid">
@@ -68,19 +68,19 @@
               <li><a class="dropdown-item" href="#landing">Home</a></li>
               <li><a class="dropdown-item" href="#projects">Projects</a></li>
               <li><a class="dropdown-item" href="#tools">Tools</a></li>
-              <li><a class="dropdown-item" href="#contact">Contacts</a></li>
+              <li><a class="dropdown-item" href="#contact-form">Contact Me!</a></li>
             </ul>
           </li>
         </ul>
       </div>
 
-      <!-- <a class="navbar-item pe-5 pt-3 nav-link text-danger" href="#resume"
+      <a class="navbar-item pe-5 pt-3 nav-link text-danger" href="https://drive.google.com/file/d/1Oj9bnNkYwgHVoktKHtPIGPu6CHMKQ5qP/view?usp=sharing"
         >View My Resume</a
-      > -->
+      >
     </nav>
 
     <!-- Navbar End -->
-    <main class="container-fluid pt-5">
+    <main class="container-fluid pt-3">
       <!-- Landing Start -->
       <div
         id="landing"
@@ -89,7 +89,12 @@
         <div class="my-5">
           Hello! My Name is
           <h1 class="text-danger">RED CRYSTAL</h1>
-          Full Stack Web Development, Data Analytics & Game Development
+          <p>
+            I am a Junior Full-Stack Web Developer with experience building responsive web applications using the MERN stack. I’ve worked on front-end and back-end features, API integration, and database-driven systems, with hands-on experience in e-commerce and internal business tools. <br>
+
+          I enjoy learning new technologies, writing clean and maintainable code, and collaborating with teams to turn ideas into functional solutions. With a background in data analysis and QA testing, I bring attention to detail and a user-focused mindset to every project.
+          </p>
+          
           <div class="pt-3 fs-2">
             <a href="#contact"
               ><i class="p-2 bi bi-envelope-fill text-danger"></i
@@ -124,7 +129,7 @@
         <div id="ecommerce" class="col">
           <div class="card text-white bg-dark mb-3">
             <div class="card-header h-50">
-              <a href="https://github.com/Reinigen/gridpay-alpha-client">
+              <a href="https://github.com/Reinigen/GridTap-alpha-client">
                 <img
                   src="https://happay.com/blog/wp-content/uploads/sites/12/2022/08/best-billing-software.webp"
                   class="img-fluid rounded h-100"
@@ -135,13 +140,13 @@
               <h5 class="card-title">
                 <a
                   class="link-light link-underline link-underline-opacity-0"
-                  href="https://github.com/Reinigen/gridpay-alpha-client"
+                  href="https://grid-tap.com/"
                 >
-                  GridPay
+                  GridTap
                 </a>
               </h5>
               <p class="card-text">
-                Though still in progress GridPay is a cloud-based utility
+                Though still in progress GridTap is a cloud-based utility
                 billing software that manages billing, payments, customer
                 accounts, and reporting. The software will operate on a
                 subscription model, with pricing based on the number of
@@ -404,10 +409,11 @@
               ><i class="p-2 bi bi-github text-danger"></i
             ></a>
           </div>
-            <form class="text-start ps-3 mt-5">
+            <form action="https://api.web3forms.com/submit" method="POST" class="text-start ps-3 mt-5">
+              <input type="hidden" name="access_key" value="72ae4d1c-4d25-4178-9d35-0f91acc5e8e0">
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name: </label>
-                <input type="text" class="form-control" id="name" />
+                <input type="text" class="form-control" id="name" name="name" required/>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email address:</label>
@@ -415,7 +421,9 @@
                   type="email"
                   class="form-control"
                   id="email"
+                  name="email"
                   aria-describedby="emailHelp"
+                  required
                 />
                 <div id="emailHelp" class="form-text">
                   We'll never share your email with anyone else.
@@ -423,7 +431,7 @@
               </div>
               <div class="mb-3">
                 <label class="form-label" for="message">Message:</label>
-                <textarea class="form-control" id="message" rows="5">
+                <textarea class="form-control" id="message" name="message" rows="5" required>
                 </textarea>
               </div>
               <button type="submit" class="btn btn-danger">Submit</button>
