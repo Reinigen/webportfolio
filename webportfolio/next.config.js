@@ -3,12 +3,13 @@
 
 const nextConfig = {
   /* config options here */
-  output: 'export', // Enables static exports
-  basePath: '/webportfolio', // Replace with your repository name
-  assetPrefix: '/webportfolio/', // Replace with your repository name and include the trailing slash
+  // Added a production vs deployed view to make it easier to edit and keep changes consistent
+  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
+  basePath: process.env.NODE_ENV === 'production' ? '/webportfolio' : undefined,
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/webportfolio/' : undefined,
   trailingSlash: true,
   images: {
-    unoptimized: true, // GitHub Pages does not support Next.js image optimization
+    unoptimized: true,
   },
 };
 

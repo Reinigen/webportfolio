@@ -1,0 +1,46 @@
+"use client";
+export default function Navbar(){
+    return (    
+        <nav
+      className="navbar-dark d-flex flex-row justify-content-between pt-3 ps-5 inter-bold sticky-top"
+    >
+      {/* <!-- Large Screen Navbar --> */}
+      <div className="d-none d-md-flex navbar" id="navbarNav">
+        <a className="nav-item nav-link active text-light"
+          aria-current="page"
+          href="#landing"
+          >Home</a>
+          
+        <a className="nav-item nav-link text-light" href="#projects">Projects</a>
+        <a className="nav-item nav-link text-light" href="#tools">Tools</a>
+        <a className="nav-item nav-link text-light" href="#contact-form">Contact Me!</a>
+      </div>
+      {/* <!-- Small Screen Navbar --> */}
+      <div className="d-md-none container-fluid">
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <li className="nav-item dropdown">
+            <button
+              className="nav-link dropdown-toggle"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Menu
+            </button>
+            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a className="dropdown-item" href="#landing">Home</a></li>
+              <li><a className="dropdown-item" href="#projects">Projects</a></li>
+              <li><a className="dropdown-item" href="#tools">Tools</a></li>
+              <li><a className="dropdown-item" href="#contact-form">Contact Me!</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <a className="navbar-item pe-5 pt-3 nav-link text-danger" href="https://drive.google.com/file/d/1Oj9bnNkYwgHVoktKHtPIGPu6CHMKQ5qP/view?usp=sharing">
+        View My Resume
+      </a>
+    </nav>
+    );
+}

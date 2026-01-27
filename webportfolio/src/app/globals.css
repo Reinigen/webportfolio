@@ -8,13 +8,15 @@ CSS Reset
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(to right, #040110, #1f2223);
+  
+  
 }
 body {
   font-family: var(--font-inter), sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
+  background-image: linear-gradient(to right, #040110, #1f2223);
 }
 
 h1,
@@ -56,4 +58,11 @@ iframe {
 
 button {
   border-radius: 100px;
+}
+
+#landing,
+#projects,
+#tools,
+#contact-form {
+  scroll-margin-top: 80px; /* Adjust based on your navbar height */
 }
