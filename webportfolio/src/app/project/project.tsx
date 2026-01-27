@@ -1,4 +1,4 @@
-import data from "./projects.json"
+import data from "../projects.json"
 export default function Projects(){
     const objExample = {
         title: "",
