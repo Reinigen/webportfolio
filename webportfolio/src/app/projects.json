@@ -14,11 +14,11 @@
         "image": "https://media.istockphoto.com/id/1253922154/vector/blog-authors-writing-articles.jpg?s=612x612&w=0&k=20&c=rfl7LAg3NoD2fYlPXTBvnXexaq2cFTZLxt7ronsBsWk="
     },
     {
-        "title": "",
-        "link": "",
-        "description": "",
-        "tags": [],
-        "image": ""
+        "title": "PixelForge E-Commerce Web-App",
+        "link": "https://github.com/Reinigen/pixel-forge-ecommerce-app/tree/main#",
+        "description": "This project was created as the final project for my time in the Zuitt Bootcamp Training",
+        "tags": ["React", "NodeJS", "ExpressJS", "MongoDB"],
+        "image": "https://raw.githubusercontent.com/Reinigen/pixel-forge-ecommerce-app/refs/heads/main/public/Pixel%20Forge.png"
     }
 
 ]

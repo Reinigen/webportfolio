@@ -11,6 +11,7 @@ import ClassNames from 'embla-carousel-class-names'
 import useEmblaCarousel from 'embla-carousel-react'
 import Image from 'next/image'
 import '../../embla.css'
+import { Badge } from 'react-bootstrap';
 
 type Project = {
   title: string
@@ -72,18 +73,23 @@ const EmblaCarousel = (props: PropType) => {
 
   return (
     <section className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
+      <div className="embla__viewport justify-content-center" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((project, index) => (
             <div className="embla__slide" key={index}>
-              {project.image && (
-                <Image
+              {project.image && currentProject.link && (
+                <>
+                <a href={currentProject.link}  target="_blank"><Image
                   src={project.image}
                   alt={project.title}
                   fill
                   className="embla__slide__image"
                   style={{ objectFit: 'cover' }}
-                />
+                /></a>
+            
+                
+                </>
+                
               )}
             </div>
           ))}
@@ -97,24 +103,22 @@ const EmblaCarousel = (props: PropType) => {
         </div>
       </div>
 
-      {currentProject && currentProject.title && (
+      {currentProject && currentProject.title &&  currentProject.link && (
         <div className="embla__project-info">
-          <h3 className="embla__project-title">{currentProject.title}</h3>
-          <p className="embla__project-description">{currentProject.description}</p>
-          <div className="embla__project-tags">
+          <h3 className="text-danger"><a href={currentProject.link} className="rounded-pill text-white bg-danger p-2 link-danger link-underline-opacity-0" target="_blank" rel="noopener noreferrer">{currentProject.title}</a></h3>
+          <div className="embla__project-tags justify-content-center">
             {currentProject.tags.map((tag, index) => (
-              <span key={index} className="embla__project-tag">{tag}</span>
+              <Badge pill key={index} bg='secondary' className='fs-6'>{tag}</Badge>
             ))}
           </div>
-          {currentProject.link && (
-            <a href={currentProject.link} className="embla__project-link" target="_blank" rel="noopener noreferrer">
-              View Project
-            </a>
-          )}
+          <p className="justify-content-center">{currentProject.description}</p>
+          
+          
+           
         </div>
       )}
 
-      <div className="embla__live-region" />
+      
     </section>
   )
 }
