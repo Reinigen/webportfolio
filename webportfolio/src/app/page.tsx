@@ -1,7 +1,6 @@
-export default function Landing(){
-    return(
-        
-        <div className="my-5">
+export default function Index() {
+  return (
+    <div className="my-5">
           Hello! My Name is
           <h1 className="text-danger">RED CRYSTAL</h1>
           Full Stack Web Development, Data Analytics & Game Development
@@ -22,5 +21,7 @@ export default function Landing(){
             </button>
           </div>
         </div>
-    )
+    
+    
+  )
 }

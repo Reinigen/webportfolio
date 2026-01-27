@@ -1,21 +1,26 @@
-/* CSS Reset  */
+:root {
+  --font-inter: var(--font-inter);
+  --font-rubik: var(--font-rubik);
+}
+
+CSS Reset 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-image: linear-gradient(to right, #040110, #1f2223);
 }
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  background-image: linear-gradient(to right, #040110, #1f2223);
 }
 
 h1,
 h2,
 h4 {
-  font-family: "Rubik", sans-serif;
+  font-family: var(--font-rubik), sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -26,7 +31,7 @@ h1 {
 }
 
 .inter-bold {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
