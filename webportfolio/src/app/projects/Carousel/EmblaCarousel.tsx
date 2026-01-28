@@ -105,10 +105,10 @@ const EmblaCarousel = (props: PropType) => {
 
       {currentProject && currentProject.title &&  currentProject.link && (
         <div className="embla__project-info">
-          <h3 className="text-danger"><a href={currentProject.link} className="rounded-pill text-white bg-danger p-2 link-danger link-underline-opacity-0" target="_blank" rel="noopener noreferrer">{currentProject.title}</a></h3>
+          <h3 className="text-danger mb-4 text-center"><a href={currentProject.link} className="text-danger p-2 text-decoration-none fs-1" target="_blank" rel="noopener noreferrer">{currentProject.title}</a></h3>
           <div className="embla__project-tags justify-content-center">
             {currentProject.tags.map((tag, index) => (
-              <Badge pill key={index} bg='secondary' className='fs-6'>{tag}</Badge>
+              <Badge pill key={index} bg='light' text='dark' className='fs-6'>{tag}</Badge>
             ))}
           </div>
           <p className="justify-content-center">{currentProject.description}</p>

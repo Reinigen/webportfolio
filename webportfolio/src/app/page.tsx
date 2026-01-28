@@ -11,9 +11,9 @@ const rubik = Rubik({
 export default function Home() {
   return (
     <section  id="landing" className="row text-light pt-5 px-5 d-flex flex-column flex-md-row">
-    <div className="my-5 vh-100 justify-content-center">
+    <div className="my-5 vh-100 justify-content-center fs-4">
       Hello! My Name is
-      <h1 className={`${rubik.variable} text-danger fs-1`}>RED CRYSTAL</h1>
+      <h1 className={`${rubik.variable} text-danger`}>RED CRYSTAL</h1>
       Full Stack Web Development, Data Analytics & Game Development
       
       <div className="pt-3 fs-2">

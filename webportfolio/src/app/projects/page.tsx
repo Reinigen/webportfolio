@@ -13,7 +13,6 @@ export default function Projects(){
 
     return(
         <div id="projects" className="justify-content-center vh-100 my-5">
-            <h2 className="text-danger">Featured Projects</h2>
             <EmblaCarousel slides={projects} options={OPTIONS} />
         </div>
     )

@@ -1,5 +1,6 @@
 
 import type { Metadata } from "next";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Navbar from "./navbar/navbar";
 import {Inter, Rubik} from "next/font/google"
@@ -28,14 +29,6 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* <!-- Bootstrap CSS Link --> */}
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossOrigin="anonymous"
-        />
 
         {/* <!-- Bootstrap Icons Link --> */}
         <link
