@@ -1,11 +1,6 @@
 "use client";
 import React, { useCallback, useEffect, useState } from 'react'
 import { EmblaOptionsType, EmblaCarouselType } from 'embla-carousel'
-import {
-  PrevButton,
-  NextButton,
-  usePrevNextButtons
-} from './EmblaCarouselArrowButtons'
 import Autoplay from 'embla-carousel-autoplay'
 import ClassNames from 'embla-carousel-class-names'
 import useEmblaCarousel from 'embla-carousel-react'
@@ -33,20 +28,6 @@ const EmblaCarousel = (props: PropType) => {
     Autoplay({ delay: 4000, stopOnInteraction: true }),
     ClassNames()
   ])
-
-  const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
-    const autoplay = emblaApi?.plugins()?.autoplay
-    if (!autoplay) return
-
-    autoplay.stop()
-  }, [])
-
-  const {
-    prevBtnDisabled,
-    nextBtnDisabled,
-    onPrevButtonClick,
-    onNextButtonClick
-  } = usePrevNextButtons(emblaApi, onNavButtonClick)
 
   useEffect(() => {
     if (!emblaApi) return
@@ -83,7 +64,7 @@ const EmblaCarousel = (props: PropType) => {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="embla__slide__image"
+                  className="embla__slide"
                   style={{ objectFit: 'cover' }}
                 /></a>
             
@@ -93,13 +74,6 @@ const EmblaCarousel = (props: PropType) => {
               )}
             </div>
           ))}
-        </div>
-      </div>
-
-      <div className="embla__controls">
-        <div className="embla__buttons">
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
       </div>
 
