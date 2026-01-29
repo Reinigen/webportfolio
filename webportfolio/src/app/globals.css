@@ -11,6 +11,10 @@ CSS Reset
   
   
 }
+#siteNavbar {
+  background-image: linear-gradient(to right, #040110 100%, #1f2223 100%);
+}
+
 body {
   font-family: var(--font-inter), sans-serif;
   font-optical-sizing: auto;

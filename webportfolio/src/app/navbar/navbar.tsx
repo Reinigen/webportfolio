@@ -7,7 +7,7 @@ const inter = Inter({
 
 export default function Navbar(){
     return (    
-        <nav
+        <nav id="siteNavbar"
       className={`${inter.variable} navbar-dark d-flex flex-row justify-content-between pt-3 ps-5 inter-bold sticky-top fs-5`}
     >
       {/* <!-- Large Screen Navbar --> */}
