@@ -2,17 +2,22 @@
   --slide-height: 9rem;
   --slide-spacing: 2rem;
   --slide-size: 60%;
+  --dot-spacing: 2rem;
+  --dot-border: 0.2rem;
+  --dot-size: 1rem
 }
 
 @media screen and (min-width: 576px) {
   :root {
     --slide-height: 15rem;
+    --dot-size: 1.2rem
   }
 }
 
 @media screen and (min-width: 768px) {
   :root {
     --slide-height: 19rem;
+    --dot-size: 1.5em
   }
 }
 
@@ -88,8 +93,8 @@
   border: 0;
   padding: 0;
   margin: 0;
-  width: 2rem;
-  height: 2rem;
+  width: var(--dot-spacing);
+  height: var(--dot-spacing);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,8 +103,8 @@
 }
 .embla__dot:before,
 .embla__dot:after {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: var(--dot-size);
+  height: var(--dot-size);
   border-radius: 50%;
   position: absolute;
   display: flex;
@@ -107,10 +112,10 @@
   content: '';
 }
 .embla__dot:before {
-  border: 0.2rem solid white;
+  border: var(--dot-border) solid white;
 }
 .embla__dot:after {
-  border: 0.2rem solid red;
+  border: var(--dot-border) solid red;
   opacity: 0;
 }
 .embla__dot--selected:after {
