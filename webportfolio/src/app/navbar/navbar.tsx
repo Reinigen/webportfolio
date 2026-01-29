@@ -17,8 +17,8 @@ export default function Navbar(){
           href="#landing"
           >Home</a>
           
-        <a className="nav-item nav-link text-light" href="#projects">Projects</a>
         <a className="nav-item nav-link text-light" href="#experience">Experience</a>
+        <a className="nav-item nav-link text-light" href="#projects">Projects</a>
         <a className="nav-item nav-link text-light" href="#contact-form">Contact Me!</a>
       </div>
       {/* <!-- Small Screen Navbar --> */}
@@ -37,8 +37,8 @@ export default function Navbar(){
             </button>
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a className="dropdown-item" href="#landing">Home</a></li>
-              <li><a className="dropdown-item" href="#projects">Projects</a></li>
               <li><a className="dropdown-item" href="#experience">Experience</a></li>
+              <li><a className="dropdown-item" href="#projects">Projects</a></li>
               <li><a className="dropdown-item" href="#contact-form">Contact Me!</a></li>
             </ul>
           </li>
