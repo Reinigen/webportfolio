@@ -45,9 +45,9 @@ export default function RootLayout({
           
           
         </main>
-        <div>
+        <footer className="text-light text-center p-5">
           ©2023-2025 Raymund Dominic L. Crystal. All Rights Reserved.
-        </div>
+        </footer>
        
          {/* <!-- Bootstrap JS Link --> */}
     <script

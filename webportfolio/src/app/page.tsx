@@ -38,7 +38,6 @@ export default function Home() {
     <Experience experience={experienceData} />
     <Projects />
     <Contact />
-    
     </section>
    
     
