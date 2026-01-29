@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Contact from "./contact/contact";
 import Projects from "./projects/page";
+import Experience from "./experience/experience"
+import WorkExperience from "./experience.json"
 import { Rubik } from "next/font/google";
 
 const rubik = Rubik({
@@ -9,11 +11,13 @@ const rubik = Rubik({
 })
 
 export default function Home() {
+  const experienceData = WorkExperience;
+
   return (
     <section  id="landing" className="row text-light pt-5 px-5 d-flex flex-column flex-md-row">
-    <div className="mt-5 vh-100 justify-content-center fs-4">
+    <div className="mt-5 mx-5 vh-100 justify-content-center align-items-center fs-4">
       Hello! My Name is
-      <h1 className={`${rubik.variable} text-danger`}>RED CRYSTAL</h1>
+      <h1 className={`${rubik.variable} text-danger h1`}>RED CRYSTAL</h1>
       Full Stack Web Development, Data Analytics & Game Development
       
       <div className="pt-3 fs-2">
@@ -27,10 +31,11 @@ export default function Home() {
       </div>
       <div className="my-5 d-flex justify-content-center">
         <button className="btn-danger">
-          <Link href="#projects" className="nav-link rounded-pill text-dark" > View Featured Projects </Link>
+          <Link href="#projects" className="nav-link rounded-pill text-dark " > View Featured Projects </Link>
         </button>
       </div>
     </div>
+    <Experience experience={experienceData} />
     <Projects />
     <Contact />
     

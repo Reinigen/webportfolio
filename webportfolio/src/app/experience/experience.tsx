@@ -1,0 +1,68 @@
+"use client";
+
+
+type Experience = {
+    company: string,
+    title: string,
+    years: string,
+    description: string[],
+    education: boolean
+}
+type PropType = {
+    experience: Experience[]
+}
+
+const Experience = (props: PropType) => {
+    const { experience }  = props
+
+    return (
+        <section id="experience" className="justify-content-center my-5 min-vh-100">
+            <ul className="nav nav-pills justify-content-center p-3 my-3" id="myTab" role="tablist">
+                <li className="nav-item" role="presentation">
+                    <button className="nav-link text-danger fs-3 active" id="work-experience-tab" data-bs-toggle="pill" data-bs-target="#work-experience" type="button" role="tab" aria-controls="work-experience" aria-selected="true"> <h3>Experience</h3></button>
+                </li>
+                <li className="nav-item md-ms-5" role="presentation">
+                    <button className="nav-link text-danger fs-3" id="education-tab" data-bs-toggle="pill" data-bs-target="#education" type="button" role="tab" aria-controls="education" aria-selected="false"><h3>Education</h3></button>
+                </li>
+
+            </ul>
+            <div className="tab-content m-5" id="myTabContent">
+                <div className="tab-pane fade show active " role="tab-panel" aria-labelledby="work-experience-tab"  id="work-experience">
+                    <div className="card-group row-cols-sm-12 row-cols-md-2 row-cols-xl-4 gap-4 justify-content-center">
+                    {experience.map((company, index) => (
+                        <div className="" key={index}>
+                        {!company.education && (
+                        <div className="card mb-5 col-sm-12 p-5 bg-dark text-light border-danger" style={{maxWidth: "24rem", height: "100%"}}>
+                                <h3 className="card-title text-danger">{company.company}</h3>
+                                <h4 className="card-subtitle text-light">{company.title}</h4>
+                                <h5 className="mt-3 text-danger ">{company.years}</h5>
+                                <ul className="card-body">
+                                    {company.description.map((desc, index) => (
+                                    <li key={index}>{desc}</li>))}
+                                </ul>
+                            </div>
+                        )}
+                        </div>
+                    ))}           
+                    </div>
+                </div>
+                <div className="tab-pane fade show" role="tab-panel" aria-labelledby="education-tab" id="education">
+                    {experience.map((company, index) => (
+                        <div className="mx-5" key={index}>
+                        {company.education && (
+                            <div className="text-start">
+                                <h3 className="text-danger">{company.company} | {company.title}</h3>
+                                <h5>{company.years}</h5>
+                            </div>
+                        )}
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+        
+    )
+
+}
+
+export default Experience

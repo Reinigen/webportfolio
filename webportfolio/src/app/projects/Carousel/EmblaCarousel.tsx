@@ -9,10 +9,10 @@ import '../../embla.css'
 import { Badge } from 'react-bootstrap';
 
 type Project = {
-  title: string
-  link: string
-  description: string
-  tags: string[]
+  title: string,
+  link: string,
+  description: string,
+  tags: string[],
   image: string
 }
 

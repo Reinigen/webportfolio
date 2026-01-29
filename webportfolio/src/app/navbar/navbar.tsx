@@ -18,7 +18,7 @@ export default function Navbar(){
           >Home</a>
           
         <a className="nav-item nav-link text-light" href="#projects">Projects</a>
-        {/* <a className="nav-item nav-link text-light" href="#tools">Tools</a> */}
+        <a className="nav-item nav-link text-light" href="#experience">Experience</a>
         <a className="nav-item nav-link text-light" href="#contact-form">Contact Me!</a>
       </div>
       {/* <!-- Small Screen Navbar --> */}
@@ -26,18 +26,19 @@ export default function Navbar(){
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item dropdown">
             <button
-              className="nav-link dropdown-toggle bg-transparent text-light"
+              className="btn fs-4 mt-3 dropdown-toggle bg-transparent text-light"
               id="navbarDropdown"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
               Menu
+            
             </button>
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a className="dropdown-item" href="#landing">Home</a></li>
               <li><a className="dropdown-item" href="#projects">Projects</a></li>
-              {/* <li><a className="dropdown-item" href="#tools">Tools</a></li> */}
+              <li><a className="dropdown-item" href="#experience">Experience</a></li>
               <li><a className="dropdown-item" href="#contact-form">Contact Me!</a></li>
             </ul>
           </li>

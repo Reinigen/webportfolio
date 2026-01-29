@@ -1,9 +1,9 @@
 export default function Contact(){
     return(
         <div id="contact-form" className="me-md-5 me-5 my-5 vh-75">
-            <h1 className="text-danger">Connect with Me!</h1>
+            <h1 className="text-danger h1">Connect with Me!</h1>
             <p className="pe-3">Does my work align with your needs? If so, feel free to leave a message!</p>
-            <div className="pe-2 pt-3 fs-2">
+            <div className="pe-5 pt-3 fs-2">
                 <a href="#contact-form"
                     ><i className="p-2 bi bi-envelope-fill text-danger" /></a>
                 <a href="www.linkedin.com/in/raymundcrystal"

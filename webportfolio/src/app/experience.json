@@ -1,0 +1,58 @@
+[
+    {
+    "company": "GridTap",
+    "title": "Development Lead",
+    "years": "June 2025 - Present",
+    "description": ["Led the development of a full-featured, multi-tenant water utility billing system with: Node.js/Express backend, React frontend, Batch PDF bill generation, Batch CSV uploads.", "Hosted on Amazon it provides its service to Stanford Water Utilities as it’s main method of managing their water utility business."],
+    "education": false
+    },
+    {
+    "company": "NielsenIQ",
+    "title": "Executive Customer Success",
+    "years": "August 2022 - October 2024",
+    "description": ["I worked with international FMCG companies to boost sales revenue through analyzing their previous performance.", " Collaborated closely with clients to align efforts with their business goals, using data-driven insights to optimize performance and increase revenue."],
+    "education": false
+    },
+    {
+    "company": "Stanford Water Utility",
+    "title": "Operations Assistant",
+    "years": "July 2021 - March 2022",
+    "description": ["Assisted in Managing the billing processes of the company. Helped devise a system for meter reading and billing system."],
+    "education": false
+    },
+    {
+    "company": "XOLVE. INC",
+    "title": "React Development",
+    "years": "June 2021 - August 2021",
+    "description": ["Created the front-end for a R&D product using NextJS and React. Set up social logins as well as regular log-ins. Worked with a backend programmer also doing freelance work."],
+    "education": false
+    },
+    {
+    "company": "Konsum Technologies Inc.",
+    "title": "Quality Assurance Tester (OJT)",
+    "years": "May 2016",
+    "description": ["Support function to the UIX and functional QA team for the release of the new features for ASHIMA - a SaaS end-to-end payroll, timekeeping, shift planning and workforce management software.", "Executed test plans on pre-release versions to detect and record bugs and user issues. Compiled lists of bugs, defects or design issues found during testing."],
+    "education": false
+    },
+    {
+    "company": "Hyperseries. LTD.",
+    "title": "Content and Web Assistant (OJT)",
+    "years": "April 2015 - May 2015",
+    "description": ["Assisted in the review, redrafting and migration of content for website projects on wordpress and adobe business catalyst platforms.", "Organized and migrated content and images from previously outdated sites to modern sites with content managed backend.", "Edited images for SEO optimization."],
+    "education": false
+    },
+    {
+    "company": "Zuitt Coding Boot Camp",
+    "title": "MERN Stack - Full Stack Web Development",
+    "years": "Dec 2024 - Feb 2025",
+    "description": [""],
+    "education": true
+    },
+    {
+    "company": "Ateneo de Manila University",
+    "title": "BS Management Information Systems (MIS)",
+    "years": "2018 - 2022",
+    "description": [""],
+    "education": true
+    }
+]
