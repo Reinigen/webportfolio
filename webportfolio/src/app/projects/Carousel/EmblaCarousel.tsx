@@ -1,12 +1,13 @@
 "use client";
 import React, { useCallback, useEffect, useState } from 'react'
-import { EmblaOptionsType, EmblaCarouselType } from 'embla-carousel'
+import { EmblaOptionsType } from 'embla-carousel'
 import Autoplay from 'embla-carousel-autoplay'
 import ClassNames from 'embla-carousel-class-names'
 import useEmblaCarousel from 'embla-carousel-react'
 import Image from 'next/image'
 import '../../embla.css'
 import { Badge } from 'react-bootstrap';
+import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 
 type Project = {
   title: string,
@@ -51,6 +52,8 @@ const EmblaCarousel = (props: PropType) => {
   }, [emblaApi])
 
   const currentProject = slides[selectedIndex]
+  const { selectedIndexDot, scrollSnaps, onDotButtonClick } =
+    useDotButton(emblaApi)
 
   return (
     <section className="embla">
@@ -67,12 +70,22 @@ const EmblaCarousel = (props: PropType) => {
                   className="embla__slide"
                   style={{ objectFit: 'cover' }}
                 /></a>
-            
-                
-                </>
-                
+                </>    
               )}
             </div>
+          ))}
+        </div>
+      </div>
+      <div className="embla__controls">
+        <div className="embla__dots">
+          {scrollSnaps.map((_, index) => (
+            <DotButton
+              key={index}
+              onClick={() => onDotButtonClick(index)}
+              className={'embla__dot'.concat(
+                index === selectedIndexDot ? ' embla__dot--selected' : ''
+              )}
+            />
           ))}
         </div>
       </div>
@@ -85,13 +98,8 @@ const EmblaCarousel = (props: PropType) => {
             ))}
           </div>
           <p className="justify-content-center">{currentProject.description}</p>
-          
-          
-           
         </div>
       )}
-
-      
     </section>
   )
 }
