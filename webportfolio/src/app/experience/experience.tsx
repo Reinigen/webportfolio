@@ -26,13 +26,13 @@ const Experience = (props: PropType) => {
                 </li>
 
             </ul>
-            <div className="tab-content m-5" id="myTabContent">
+            <div className="tab-content m-md-5" id="myTabContent">
                 <div className="tab-pane fade show active " role="tab-panel" aria-labelledby="work-experience-tab"  id="work-experience">
-                    <div className="card-group row-cols-sm-12 row-cols-md-2 row-cols-xl-4 gap-4 justify-content-center">
+                    <div className="card-group row-cols-sm-12 row-cols-xl-3 row-cols-xxl-4 gap-4 justify-content-center">
                     {experience.map((company, index) => (
                         <div className="" key={index}>
                         {!company.education && (
-                        <div className="card mb-5 col-sm-12 p-5 bg-dark text-light border-danger" style={{maxWidth: "24rem", height: "100%"}}>
+                        <div className="card col-sm-12 p-5 bg-dark text-light border-danger" style={{ height: "100%"}}>
                                 <h3 className="card-title text-danger">{company.company}</h3>
                                 <h4 className="card-subtitle text-light">{company.title}</h4>
                                 <h5 className="mt-3 text-danger ">{company.years}</h5>

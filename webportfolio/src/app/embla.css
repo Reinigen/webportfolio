@@ -1,9 +1,24 @@
+:root {
+  --slide-height: 9rem;
+  --slide-spacing: 2rem;
+  --slide-size: 60%;
+}
+
+@media screen and (min-width: 576px) {
+  :root {
+    --slide-height: 15rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --slide-height: 19rem;
+  }
+}
+
 .embla {
   max-width: 48rem;
   margin: auto;
-  --slide-height: 19rem;
-  --slide-spacing: 2rem;
-  --slide-size: 60%;
 }
 .embla__viewport {
   overflow: hidden;
@@ -37,6 +52,7 @@
   padding: 1.5rem;
   border-radius: 0.5rem;
   background-color: rgba(var(--text-body-rgb-value), 0.05);
+  min-height: max-content;
 }
 
 .embla__project-tags {

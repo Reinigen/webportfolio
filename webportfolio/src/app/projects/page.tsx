@@ -12,7 +12,7 @@ export default function Projects(){
     
 
     return(
-        <div id="projects" className="justify-content-center vh-100 my-5">
+        <div id="projects" className="justify-content-center min-vh-100 my-5">
             <EmblaCarousel slides={projects} options={OPTIONS} />
         </div>
     )

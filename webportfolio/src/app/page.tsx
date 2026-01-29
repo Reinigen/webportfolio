@@ -14,8 +14,8 @@ export default function Home() {
   const experienceData = WorkExperience;
 
   return (
-    <section  id="landing" className="row text-light pt-5 px-5 d-flex flex-column flex-md-row">
-    <div className="mt-5 mx-5 vh-100 justify-content-center align-items-center fs-4">
+    <section  id="landing" className="row text-light pt-5 px-1 px-md-5 d-flex flex-column flex-md-row">
+    <div className="mt-5 mx-md-5 vh-100 justify-content-center align-items-center fs-4">
       Hello! My Name is
       <h1 className={`${rubik.variable} text-danger h1`}>RED CRYSTAL</h1>
       Full Stack Web Development, Data Analytics & Game Development

@@ -76,7 +76,6 @@ const EmblaCarousel = (props: PropType) => {
           ))}
         </div>
       </div>
-
       {currentProject && currentProject.title &&  currentProject.link && (
         <div className="embla__project-info">
           <h3 className="text-danger mb-4 text-center"><a href={currentProject.link} className="text-danger p-2 text-decoration-none fs-1" target="_blank" rel="noopener noreferrer">{currentProject.title}</a></h3>
