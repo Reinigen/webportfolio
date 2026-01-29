@@ -6,7 +6,7 @@ export default function Contact(){
             <div className="pe-5 pt-3 fs-2">
                 <a href="#contact-form"
                     ><i className="p-2 bi bi-envelope-fill text-danger" /></a>
-                <a href="www.linkedin.com/in/raymundcrystal"
+                <a href="https://www.linkedin.com/in/raymundcrystal"
                     ><i className="p-2 bi bi-linkedin text-danger"/></a>
                 <a href="https://github.com/Reinigen"
                     ><i className="p-2 bi bi-github text-danger"/></a>
