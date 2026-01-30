@@ -36,7 +36,7 @@ const Experience = (props: PropType) => {
                         {!company.education && (
                         <div className="card col-sm-12 p-5 bg-dark text-light border-danger" style={{ height: "100%"}}>
                                 <h3 className="card-title fs-1 text-danger">{company.company}</h3>
-                                <Badge pill bg="danger" className="text-uppercase text-light" >{company.title}</Badge>
+                                <Badge pill bg="danger" className="text-uppercase text-wrap text-light" >{company.title}</Badge>
                                 <h5 className="mt-3 text-danger ">{company.years}</h5>
                                 <ul className="card-body">
                                     {company.description.map((desc, index) => (
