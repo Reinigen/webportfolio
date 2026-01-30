@@ -29,8 +29,8 @@ function ControlledCarousel(props: Projects) {
     <div className='embla'>
         <Carousel activeIndex={index} indicators={false} onSelect={handleSelect}>
             {projects.map((project, index) => (
-                <Carousel.Item className='p-5' key={index}>
-                    <div className='embla__project-info align-items-center  mx-5'>
+                <Carousel.Item className='p-3 p-lg-5' key={index}>
+                    <div className='embla__project-info align-items-center  mx-lg-5'>
                         <h3 className="text-danger mb-4 text-center"><a href={project.link} className="text-danger p-2 text-decoration-none fs-1" target="_blank" rel="noopener noreferrer">
                         <Image
                                 className='text-wrap alt-text'

@@ -7,24 +7,11 @@
   --dot-spacing: .5rem;
 }
 
-@media screen and (min-width: 576px) {
-  :root {
-    --slide-height: 15rem;
-    --dot-size: .3rem
-  }
-}
-
-@media screen and (min-width: 768px) {
-  :root {
-    --slide-height: 19rem;
-    --dot-size: .5rem
-  }
-}
 
 .embla {
   max-width: 48rem;
   margin: auto;
-  min-height: 80vh;
+  min-height: 60vh;
 }
 .embla__viewport {
   overflow: hidden;
@@ -38,7 +25,7 @@
   flex: 0 0 var(--slide-size);
   min-width: 0;
   padding-left: var(--slide-spacing);
-  height: 60vh;
+  height: 80vh;
 }
 
 .embla__live-region {
@@ -66,4 +53,25 @@
   gap: 0.5rem;
   margin-bottom: 1rem;
   
+}
+
+
+@media screen and (min-width: 576px) {
+  :root {
+    --slide-height: 15rem;
+    --dot-size: .3rem
+  }
+  .embla {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --slide-height: 19rem;
+    --dot-size: .5rem
+  }
+  .embla{
+    height: 60vh;
+  }
 }
