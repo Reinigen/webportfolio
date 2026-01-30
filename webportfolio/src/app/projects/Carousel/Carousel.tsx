@@ -27,7 +27,7 @@ function ControlledCarousel(props: Projects) {
   };
   return (
     <div className='embla'>
-        <Carousel activeIndex={index} onSelect={handleSelect}>
+        <Carousel activeIndex={index} indicators={false} onSelect={handleSelect}>
             {projects.map((project, index) => (
                 <Carousel.Item className='p-5' key={index}>
                     <div className='embla__project-info align-items-center  mx-5'>
