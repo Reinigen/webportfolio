@@ -1,5 +1,7 @@
 "use client";
 
+import { Badge } from "react-bootstrap";
+
 
 type Experience = {
     company: string,
@@ -33,8 +35,8 @@ const Experience = (props: PropType) => {
                         <div className="" key={index}>
                         {!company.education && (
                         <div className="card col-sm-12 p-5 bg-dark text-light border-danger" style={{ height: "100%"}}>
-                                <h3 className="card-title text-danger">{company.company}</h3>
-                                <h4 className="card-subtitle text-light">{company.title}</h4>
+                                <h3 className="card-title fs-1 text-danger">{company.company}</h3>
+                                <Badge pill bg="danger" className="text-uppercase text-light" >{company.title}</Badge>
                                 <h5 className="mt-3 text-danger ">{company.years}</h5>
                                 <ul className="card-body">
                                     {company.description.map((desc, index) => (

@@ -82,3 +82,7 @@ button {
 .nav-pills .nav-item .nav-link.active:focus {
   background-color: #fff; /* Your desired color */
 }
+
+.text-danger, .btn-danger {
+  color: #EC002F
+}

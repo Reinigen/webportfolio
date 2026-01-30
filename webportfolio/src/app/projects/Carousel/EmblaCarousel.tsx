@@ -57,20 +57,27 @@ const EmblaCarousel = (props: PropType) => {
 
   return (
     <section className="embla">
+   
       <div className="embla__viewport justify-content-center" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((project, index) => (
             <div className="embla__slide" key={index}>
-              {project.image && currentProject.link && (
-                <>
-                <a href={currentProject.link}  target="_blank"><Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="embla__slide"
-                  style={{ objectFit: 'cover' }}
-                /></a>
-                </>    
+              {currentProject && currentProject.title &&  currentProject.link && (
+                <div className="embla__project-info" key={index}>
+                  <h3 className="text-danger mb-4 text-center"><a href={currentProject.link} className="text-danger p-2 text-decoration-none fs-1" target="_blank" rel="noopener noreferrer">
+                    <Image
+                          src={currentProject.image}
+                          alt={currentProject.title}
+                          width={50}
+                          height={50}                 
+                        /> {currentProject.title}</a></h3>
+                  <div className="embla__project-tags justify-content-center">
+                    {currentProject.tags.map((tag, index) => (
+                      <Badge pill key={index} bg='light' text='dark' className='fs-6'>{tag}</Badge>
+                    ))}
+                  </div>
+                  <p className="justify-content-center">{currentProject.description}</p>
+                </div>
               )}
             </div>
           ))}
@@ -89,17 +96,7 @@ const EmblaCarousel = (props: PropType) => {
           ))}
         </div>
       </div>
-      {currentProject && currentProject.title &&  currentProject.link && (
-        <div className="embla__project-info">
-          <h3 className="text-danger mb-4 text-center"><a href={currentProject.link} className="text-danger p-2 text-decoration-none fs-1" target="_blank" rel="noopener noreferrer">{currentProject.title}</a></h3>
-          <div className="embla__project-tags justify-content-center">
-            {currentProject.tags.map((tag, index) => (
-              <Badge pill key={index} bg='light' text='dark' className='fs-6'>{tag}</Badge>
-            ))}
-          </div>
-          <p className="justify-content-center">{currentProject.description}</p>
-        </div>
-      )}
+      
     </section>
   )
 }

@@ -1,23 +1,23 @@
 :root {
   --slide-height: 9rem;
   --slide-spacing: 2rem;
-  --slide-size: 60%;
-  --dot-spacing: 2rem;
-  --dot-border: 0.2rem;
-  --dot-size: 1rem
+  --slide-size: 100%;
+  --dot-size: .5rem;
+  --dot-border: .6rem;
+  --dot-spacing: .5rem;
 }
 
 @media screen and (min-width: 576px) {
   :root {
     --slide-height: 15rem;
-    --dot-size: 1.2rem
+    --dot-size: .3rem
   }
 }
 
 @media screen and (min-width: 768px) {
   :root {
     --slide-height: 19rem;
-    --dot-size: 1.5em
+    --dot-size: .5rem
   }
 }
 
@@ -37,8 +37,7 @@
   flex: 0 0 var(--slide-size);
   min-width: 0;
   padding-left: var(--slide-spacing);
-  position: relative;  /* Important for Image fill prop */
-  height: var(--slide-height);  /* Important for Image fill prop */
+  height: 60vh;
 }
 
 .embla__live-region {
@@ -79,13 +78,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .embla__dot {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.5);
-  -webkit-appearance: none;
   appearance: none;
-  background-color: transparent;
   touch-action: manipulation;
   display: inline-flex;
   text-decoration: none;
@@ -93,8 +89,8 @@
   border: 0;
   padding: 0;
   margin: 0;
-  width: var(--dot-spacing);
-  height: var(--dot-spacing);
+  width: var(--dot-size);
+  height: var(--dot-size);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,8 +99,8 @@
 }
 .embla__dot:before,
 .embla__dot:after {
-  width: var(--dot-size);
-  height: var(--dot-size);
+  width: var(--dot-spacing);
+  height: var(--dot-spacing);
   border-radius: 50%;
   position: absolute;
   display: flex;
@@ -113,9 +109,11 @@
 }
 .embla__dot:before {
   border: var(--dot-border) solid white;
+  background-color: white;
 }
 .embla__dot:after {
   border: var(--dot-border) solid red;
+  background-color: red;
   opacity: 0;
 }
 .embla__dot--selected:after {
