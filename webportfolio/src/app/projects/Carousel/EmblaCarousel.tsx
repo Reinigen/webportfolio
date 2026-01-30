@@ -66,8 +66,9 @@ const EmblaCarousel = (props: PropType) => {
                 <div className="embla__project-info" key={index}>
                   <h3 className="text-danger mb-4 text-center"><a href={currentProject.link} className="text-danger p-2 text-decoration-none fs-1" target="_blank" rel="noopener noreferrer">
                     <Image
+                          className='text-wrap alt-text'
                           src={currentProject.image}
-                          alt={currentProject.title}
+                          alt={`${currentProject.title} logo`}
                           width={50}
                           height={50}                 
                         /> {currentProject.title}</a></h3>

@@ -4,14 +4,14 @@
         "link": "https://grid-tap.com/",
         "description": "GridTap is a cloud-based utility billing software that manages billing, payments, customer accounts, and reporting. The software will operate on a  subscription model, with pricing based on the number of subscribers or customers onboarded.",
         "tags": ["MongoDB", "React", "ExpressJS", "NodeJS", "AWS EC2", "Docker", "AWS Cloudfront"],
-        "image": "https://github.com/Reinigen/Cursor-Test/blob/main/client/src/assets/GridPay%20Logo.png"
+        "image": "https://github.com/Reinigen/webportfolio/blob/master/webportfolio/public/GridPay%20Logo.png?raw=true"
     },
     {
         "title": "PixelForge E-Commerce API",
         "link": "https://documenter.getpostman.com/view/17410151/2sAYQgiUkx",
         "description": "PixelForge's Backend API that handles the users, cart, products and orders. ",
         "tags": ["NodeJS", "ExpressJS", "Postman"],
-        "image": "https://media.istockphoto.com/id/1253922154/vector/blog-authors-writing-articles.jpg?s=612x612&w=0&k=20&c=rfl7LAg3NoD2fYlPXTBvnXexaq2cFTZLxt7ronsBsWk="
+        "image": "https://raw.githubusercontent.com/Reinigen/pixel-forge-ecommerce-app/refs/heads/main/public/Pixel%20Forge.png"
     },
     {
         "title": "PixelForge E-Commerce Web-App",

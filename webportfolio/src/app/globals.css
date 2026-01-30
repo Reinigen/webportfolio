@@ -13,6 +13,7 @@ CSS Reset
 }
 #siteNavbar {
   background-image: linear-gradient(to right, #040110 100%, #1f2223 100%);
+  letter-spacing: 1px;
 }
 
 body {
@@ -85,4 +86,10 @@ button {
 
 .text-danger, .btn-danger {
   color: #EC002F
+}
+
+.alt-text {
+  font: var(--font-inter);
+  color: #fff;
+  font-size: small;
 }
