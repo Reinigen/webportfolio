@@ -4,7 +4,7 @@ export default function Contact(){
             <h1 className="text-danger h1">Connect with Me!</h1>
             <p className="pe-3">Does my work align with your needs? If so, feel free to leave a message!</p>
             <div className="pe-5 pt-3 fs-2">
-                <a href="#contact-form"
+                <a href="mailto:raymundcrystal@gmail.com"
                     ><i className="p-2 bi bi-envelope-fill text-danger" /></a>
                 <a href="https://www.linkedin.com/in/raymundcrystal"
                     ><i className="p-2 bi bi-linkedin text-danger"/></a>
