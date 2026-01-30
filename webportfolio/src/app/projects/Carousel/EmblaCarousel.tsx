@@ -58,10 +58,10 @@ const EmblaCarousel = (props: PropType) => {
   return (
     <section className="embla">
    
-      <div className="embla__viewport justify-content-center" ref={emblaRef}>
-        <div className="embla__container">
+      <div  className="embla__viewport justify-content-center" ref={emblaRef}>
+        <div className="embla__container ">
           {slides.map((project, index) => (
-            <div className="embla__slide" key={index}>
+            <div className={"embla__slide"} key={index}>
               {currentProject && currentProject.title &&  currentProject.link && (
                 <div className="embla__project-info" key={index}>
                   <h3 className="text-danger mb-4 text-center"><a href={currentProject.link} className="text-danger p-2 text-decoration-none fs-1" target="_blank" rel="noopener noreferrer">
@@ -83,6 +83,7 @@ const EmblaCarousel = (props: PropType) => {
             </div>
           ))}
         </div>
+         
       </div>
       <div className="embla__controls">
         <div className="embla__dots">
