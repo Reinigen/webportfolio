@@ -31,7 +31,7 @@ export default function Home() {
       <div className="my-5 d-flex justify-content-center">
         <a
           href="#projects"
-          className="btn btn-danger rounded-pill text-light text-uppercase fw-bold"
+          className="btn btn-danger rounded-pill fs-4 px-5 py-3 text-light text-uppercase fw-bold"
         >
           View Featured Projects
         </a>

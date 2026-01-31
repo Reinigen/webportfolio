@@ -88,6 +88,10 @@ button {
   color: #EC002F
 }
 
+.btn-danger {
+  background-color: #EC002F
+}
+
 .alt-text {
   font: var(--font-inter);
   color: #fff;
