@@ -2,21 +2,21 @@
     {
         "title": "GridTap",
         "link": "https://grid-tap.com/",
-        "description": "GridTap is a cloud-based utility billing software that manages billing, payments, customer accounts, and reporting. The software will operate on a  subscription model, with pricing based on the number of subscribers or customers onboarded.",
+        "description": "Built GridPay, a full-stack, multi-tenant SaaS water utility billing platform using Node.js/Express and React. Implemented tenant-isolated data models for utilities, customers, meter readings, billing, and payments, with support for batch CSV imports and automated PDF bill and statement generation.\n Designed secure JWT-based authentication with role-based access control (super admin, tenant admin, users), tenant onboarding, user management, profile preferences, and administrative tooling.\n Developed comprehensive billing workflows including flat and tiered rate calculations, VAT handling, payment tracking, and downloadable merged PDFs.\n Deployed and maintained production infrastructure using Docker, Docker Compose, MongoDB, and AWS, with HTTPS/nginx configuration, database migrations, structured logging, input validation, and automated tests for backend routes and controllers.",
         "tags": ["MongoDB", "React", "ExpressJS", "NodeJS", "AWS EC2", "Docker", "AWS Cloudfront"],
         "image": "https://github.com/Reinigen/webportfolio/blob/master/webportfolio/public/GridPay%20Logo.png?raw=true"
     },
     {
         "title": "PixelForge E-Commerce API",
         "link": "https://documenter.getpostman.com/view/17410151/2sAYQgiUkx",
-        "description": "PixelForge's Backend API that handles the users, cart, products and orders. ",
+        "description": "Developed a RESTful API for an e-commerce web application, supporting user authentication, product management, shopping carts, and order processing. Designed structured endpoints to enable secure data access and seamless integration with frontend clients.",
         "tags": ["NodeJS", "ExpressJS", "Postman"],
         "image": "https://raw.githubusercontent.com/Reinigen/pixel-forge-ecommerce-app/refs/heads/main/public/Pixel%20Forge.png"
     },
     {
         "title": "PixelForge E-Commerce Web-App",
         "link": "https://github.com/Reinigen/pixel-forge-ecommerce-app/tree/main#",
-        "description": "This project was created as the final project for my time in the Zuitt Bootcamp Training",
+        "description": "Built a full-stack e-commerce web application using React (Create React App) as the frontend, integrating with an API backend to enable dynamic product browsing, shopping cart management, and user interactions. Implemented responsive UI components, client-side routing, state management, and RESTful API integration to support core ecommerce features such as product listings, cart operations, and checkout workflows. Emphasized maintainable code structure and modern frontend tooling to deliver a performant online shopping experience.",
         "tags": ["React", "NodeJS", "ExpressJS", "MongoDB"],
         "image": "https://raw.githubusercontent.com/Reinigen/pixel-forge-ecommerce-app/refs/heads/main/public/Pixel%20Forge.png"
     }

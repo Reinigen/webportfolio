@@ -16,6 +16,14 @@ type Projects = {
     projects:Project[]
 }
 
+const AddNewLine = (props:Project) => {
+    const newText = props.description.split('\n').map((str:string, index:number) => (
+    // Use a unique key for each element when mapping
+    <p key={index}>{str}</p> 
+  ));
+  return newText
+}
+
 function ControlledCarousel(props: Projects) {
     const {projects} =props 
     const [index, setIndex] = useState(0);
@@ -44,7 +52,7 @@ function ControlledCarousel(props: Projects) {
                                 <Badge pill key={index} bg='light' text='dark' className='fs-6'>{tag}</Badge>
                             </div>))}
                         </div>
-                        <p className="justify-content-center">{project.description}</p>
+                        <div>{AddNewLine(project)}</div>
                     </div>
                     
                 </Carousel.Item>
