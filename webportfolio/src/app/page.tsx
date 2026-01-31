@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Contact from "./contact/contact";
 import Projects from "./projects/page";
 import Experience from "./experience/experience"
@@ -30,9 +29,12 @@ export default function Home() {
           ><i className="p-2 bi bi-github text-danger" /></a>
       </div>
       <div className="my-5 d-flex justify-content-center">
-        <button className="btn-danger">
-          <Link href="#projects" className="nav-link rounded-pill text-light text-uppercase fw-bold" > View Featured Projects </Link>
-        </button>
+        <a
+          href="#projects"
+          className="btn btn-danger rounded-pill text-light text-uppercase fw-bold"
+        >
+          View Featured Projects
+        </a>
       </div>
     </div>
     <Experience experience={experienceData} />
