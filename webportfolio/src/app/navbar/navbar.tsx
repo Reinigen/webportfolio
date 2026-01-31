@@ -45,7 +45,7 @@ export default function Navbar(){
         </ul>
       </div>
 
-      <a className="navbar-item pe-5 pt-3 nav-link text-danger" href="https://drive.google.com/file/d/1Oj9bnNkYwgHVoktKHtPIGPu6CHMKQ5qP/view?usp=sharing">
+      <a className="navbar-item pe-5 pt-3 nav-link text-danger" href="https://drive.google.com/file/d/1hVOCzSyuqmyUVzEBLP9UFzgbKFgZVTEj/view?usp=sharing">
         View My Resume
       </a>
     </nav>
