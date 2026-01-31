@@ -21,10 +21,10 @@ const Experience = (props: PropType) => {
         <section id="experience" className="justify-content-center my-5 min-vh-100">
             <ul className="nav nav-pills justify-content-center p-3 my-3" id="myTab" role="tablist">
                 <li className="nav-item" role="presentation">
-                    <button className="nav-link text-danger fs-3 active" id="work-experience-tab" data-bs-toggle="pill" data-bs-target="#work-experience" type="button" role="tab" aria-controls="work-experience" aria-selected="true"> <h3>Experience</h3></button>
+                    <button className="nav-link text-danger fs-3 active rounded-pill" id="work-experience-tab" data-bs-toggle="pill" data-bs-target="#work-experience" type="button" role="tab" aria-controls="work-experience" aria-selected="true"> <h3 className="pt-2">Experience</h3></button>
                 </li>
                 <li className="nav-item md-ms-5" role="presentation">
-                    <button className="nav-link text-danger fs-3" id="education-tab" data-bs-toggle="pill" data-bs-target="#education" type="button" role="tab" aria-controls="education" aria-selected="false"><h3>Education</h3></button>
+                    <button className="nav-link text-danger fs-3 rounded-pill" id="education-tab" data-bs-toggle="pill" data-bs-target="#education" type="button" role="tab" aria-controls="education" aria-selected="false"><h3 className="pt-2 ">Education</h3></button>
                 </li>
 
             </ul>

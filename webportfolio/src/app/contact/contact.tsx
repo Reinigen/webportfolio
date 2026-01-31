@@ -36,7 +36,7 @@ export default function Contact(){
                 <textarea className="form-control" id="message" name="message"  required>
                 </textarea>
                 </div>
-                <button type="submit" className="btn btn-danger mb-5">Submit</button>
+                <button type="submit" className="btn btn-danger mb-5 rounded-pill">Submit</button>
             </form>
         </div>
     )
